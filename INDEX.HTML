@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Agrinho - Agro Forte e Futuro Sustentável</title>
+    <style>
+        /* Reset de Estilos Básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho / Navegação */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e7d32; /* Verde Agro */
+        }
+
+        .logo span {
+            color: #81c784; /* Verde Sustentável */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2e7d32;
+        }
+
+        /* Seção Principal (Hero) */
+        .hero {
+            margin-top: 80px;
+            padding: 60px 20px;
+            background-color: #ffffff;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            color: #1b5e20;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .btn-principal {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(46, 125, 50, 0.2);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn-principal:hover {
+            background-color: #1b5e20;
+            transform: translateY(-2px);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        /* Seção Sobre o Tema */
+        .sobre {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .sobre h2 {
+            font-size: 32px;
+            color: #1b5e20;
+            margin-bottom: 20px;
+        }
+
+        .sobre-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border-top: 4px solid #2e7d32;
+        }
+
+        .card h3 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Projeto<span>Agrinho</span></div>
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">O Tema</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Agro Forte e Futuro Sustentável</h1>
+                <p>Descubra como a inovação no campo caminha lado a lado com a preservação ambiental, construindo o amanhã da nossa agricultura e da nossa sociedade.</p>
+                <a href="#sobre" class="btn-principal">Saber Mais</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <h2>Pilares do Nosso Futuro</h2>
+        <p style="color: #666; max-width: 700px; margin: 0 auto;">O Agrinho propõe uma reflexão sobre a importância do agronegócio moderno aliado ao respeito pela natureza.</p>
+        
+        <div class="sobre-grid">
+            <div class="card">
+                <h3>Agro Forte</h3>
+                <p>A força da produção no campo, o uso de tecnologia de ponta e a eficiência que alimenta famílias e move a economia nacional.</p>
+            </div>
+            <div class="card">
+                <h3>Sustentabilidade</h3>
+                <p>Práticas conscientes, conservação do solo, manejo correto da água e proteção das nossas florestas para as próximas gerações.</p>
+            </div>
+            <div class="card">
+                <h3>Educação e Inovação</h3>
+                <p>Levar o conhecimento técnico e a consciência ecológica para as escolas, formando jovens preparados para os novos desafios rurais.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Desenvolvido para o Futuro do Campo.</p>
+    </footer>
+
+</body>
+</html>
