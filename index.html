@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Agrinho - Agro Forte e Futuro Sustentável</title>
+    <link rel="stylesheet" href="STYLE.CSS">
     <style>
         /* Reset de Estilos Básicos */
         * {
@@ -21,8 +22,8 @@
 
         /* Cabeçalho / Navegação */
         header {
-            background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            background: linear-gradient(135deg, #1b5e20, #2e7d32);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.15);
             position: fixed;
             width: 100%;
             top: 0;
@@ -32,20 +33,22 @@
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 20px 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2e7d32; /* Verde Agro */
+            font-size: 26px;
+            font-weight: 900;
+            color: #ffffff; /* Texto principal branco para maior contraste */
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
 
         .logo span {
-            color: #81c784; /* Verde Sustentável */
+            color: #c5e1a5; /* Verde claro para destaque */
         }
 
         nav a {
@@ -63,17 +66,80 @@
         /* Seção Principal (Hero) */
         .hero {
             margin-top: 80px;
-            padding: 60px 20px;
-            background-color: #ffffff;
+            padding: 100px 20px 80px;
+            background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 65%);
+            min-height: calc(100vh - 80px);
         }
 
         .hero-container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 50px;
             align-items: center;
+        }
+
+        .hero-text {
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            color: #1b5e20;
+            margin-bottom: 24px;
+            line-height: 1.05;
+        }
+
+        .hero-text p {
+            font-size: 19px;
+            color: #455a41;
+            margin-bottom: 36px;
+            max-width: 640px;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image .image-figure {
+            width: 100%;
+            max-width: 520px;
+            min-height: 360px;
+            border-radius: 32px;
+            background: radial-gradient(circle at top left, rgba(46,125,50,0.22), transparent 34%), linear-gradient(135deg, #81c784 0%, #4caf50 100%);
+            box-shadow: 0 28px 70px rgba(46,125,50,0.18);
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image .image-figure::after {
+            content: '';
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            right: -40px;
+            bottom: -40px;
+            background: rgba(255,255,255,0.16);
+        }
+
+        .hero-image .image-figure h3 {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .hero-image .image-figure p {
+            line-height: 1.7;
+            max-width: 420px;
+            font-size: 17px;
         }
 
         @media (max-width: 768px) {
@@ -183,6 +249,11 @@
                 <p>Descubra como a inovação no campo caminha lado a lado com a preservação ambiental, construindo o amanhã da nossa agricultura e da nossa sociedade.</p>
                 <a href="#sobre" class="btn-principal">Saber Mais</a>
             </div>
+            <div class="hero-image">
+                <div class="image-figure">
+                    <h3>Conectando campo e futuro</h3>
+                    <p>Inspire-se com práticas sustentáveis, tecnologia agrícola e educação que vão fortalecer o agro e proteger o meio ambiente.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -210,6 +281,6 @@
     <footer>
         <p>&copy; 2026 Projeto Agrinho - Desenvolvido para o Futuro do Campo.</p>
     </footer>
-
+    <script src="SCRIPT.JS"></script>
 </body>
 </html>
