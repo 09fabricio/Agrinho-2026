@@ -4,7 +4,7 @@ function mudarPagina(idPagina) {
     const paginas = document.querySelectorAll('.pagina');
     if (!paginas.length) return;
     paginas.forEach(pagina => pagina.classList.remove('ativa'));
-
+// A lógica foi criada por IA.
     // Remove a classe 'active' de todos os botões
     const botoes = document.querySelectorAll('.nav-btn');
     botoes.forEach(botao => botao.classList.remove('active'));
